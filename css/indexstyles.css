@@ -1,6 +1,11 @@
-* {
+html {
     font-family: Raleway;
     color: #fafafa;
+}
+
+/* Don't change font color when link has been visited (hard to see the new color on a dark background). */
+a, a:visited, a:hover, a:active {
+    color: inherit;
 }
 
 .avatar {
@@ -10,17 +15,27 @@
     border-radius: 50%;
   }
 
+.rel {
+    position: relative;
+    top: -50px;
+    border: 7px solid #3a3f44;
+}
+
 h1 {
     text-shadow: 5px 5px black;
 }
 
 h2 {
-    /* text-shadow: 5px 5px black; */
+    text-align: center;
+}
+
+h3 {
     text-align: center;
 }
 
 .button {
-    background-color: black;
+    background-color: lightblue;
+    color: black;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -43,9 +58,11 @@ body {
 ul.breadcrumb {
     padding: 10px 30px;
     list-style: none;
-
-    background-color: grey;
     border-radius: 5px;
+}
+
+.greyBackground {
+    background-color: grey;
 }
 
 ul.breadcrumb li a:hover {
@@ -53,9 +70,14 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
+li {
+    display: table;
+    margin: 0px auto 0px auto;
+}
+
 .container {
     display: grid;
-    grid-template-rows: 200px 350px 800px 200px;
+    grid-template-rows: 200px 275px 800px 130px;
     grid-template-columns: 600px;
     grid-template-areas: 
     "hd"
@@ -68,26 +90,27 @@ ul.breadcrumb li a:hover {
 
 .box {
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .header {
     /* TODO: Border to be removed */
     display: inline-block;
-    border: 2px solid blue;
+    background-color: grey;
+    /* border: 2px solid blue; */
     text-align: center;
     grid-area: hd;
 }
 
 .sidebar {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     grid-area: sd;
     font-size: 30px;
     justify-content: center;
 }
 
 .content {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     grid-area: main;
     justify-content: center;
 }
@@ -96,7 +119,7 @@ ul.breadcrumb li a:hover {
     display: grid;
     grid-template-rows: 400px 400px;
     grid-template-columns: 300px 300px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     justify-items: center;
 }
 
@@ -104,15 +127,16 @@ ul.breadcrumb li a:hover {
     width: 275px;
     height: 325px;
     box-shadow: 5px 5px black;
-    background-color: white;
+    background-color: lightgoldenrodyellow;
     border-radius: 10px;
     justify-items: auto;
 }
 
 .photoBox {
+    display: block;
     position: relative;
     /* TODO: Figure out -20 pix diff beteween photobox and card */
-    top: -20px;
+    top: 0px;
     left: 0px;    
     width: 275px;
     height: 200px;
@@ -128,14 +152,14 @@ ul.breadcrumb li a:hover {
 
 .snippet {
     position: relative;
-    top: 175px;
+    top: -40px;
     left: 35px;    
     width: 200px;
     height: 125px;
     border-radius: 10px;
-    background-color: grey;
+    background-color: #202020;
 }
-
+/* TODO */
 /* p.snippet {
     text-align: center;
 } */
@@ -159,6 +183,28 @@ ul.breadcrumb li a:hover {
 }
 
 .footer {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    background-color: grey;
     grid-area: ft;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    font-family: 'Palanquin Dark';
+}
+
+.nestedFooter {
+    display: grid;
+    grid-template-rows: 200px 100px;
+    grid-template-columns: 300px 300px;
+    justify-items: center;
+}
+
+.LeftFt {
+    /* border: 2px solid brown; */
+}
+.RightFt{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    /* border: 2px solid brown; */
 }
