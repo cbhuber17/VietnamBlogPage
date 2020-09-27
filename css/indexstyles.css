@@ -33,18 +33,6 @@ h3 {
     text-align: center;
 }
 
-.button {
-    background-color: lightblue;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-  }
-
 body {
     background-color:#3a3f44;
 }
@@ -61,6 +49,7 @@ ul.breadcrumb {
     border-radius: 5px;
 }
 
+/* Todo: use this as multiple classes where grey is background color */
 .greyBackground {
     background-color: grey;
 }
@@ -74,6 +63,10 @@ li {
     display: table;
     margin: 0px auto 0px auto;
 }
+
+/* @media(max-width: 320px) */
+/* @media(min-width: 600px) and (max-width: 900px) */
+/* @media(min-width: 901px) */
 
 .container {
     display: grid;
@@ -90,27 +83,23 @@ li {
 
 .box {
     display: flex;
-    /* border: 2px solid red; */
 }
 
 .header {
-    /* TODO: Border to be removed */
     display: inline-block;
     background-color: grey;
-    /* border: 2px solid blue; */
     text-align: center;
     grid-area: hd;
 }
 
 .sidebar {
-    /* border: 2px solid green; */
     grid-area: sd;
     font-size: 30px;
     justify-content: center;
+
 }
 
 .content {
-    /* border: 2px solid purple; */
     grid-area: main;
     justify-content: center;
 }
@@ -119,7 +108,6 @@ li {
     display: grid;
     grid-template-rows: 400px 400px;
     grid-template-columns: 300px 300px;
-    /* border: 2px solid white; */
     justify-items: center;
 }
 
@@ -135,7 +123,7 @@ li {
 .photoBox {
     display: block;
     position: relative;
-    /* TODO: Figure out -20 pix diff beteween photobox and card */
+    /* TODO: Figure out -20 pix diff between photobox and card */
     top: 0px;
     left: 0px;    
     width: 275px;
@@ -146,7 +134,6 @@ li {
 .one {
     background-image: url('../img/VN2014_12.jpg');
     background-size: cover;
-    /* TODO: Text align in one two three four all the same. */
     text-align: center; 
 }
 
@@ -159,10 +146,6 @@ li {
     border-radius: 10px;
     background-color: #202020;
 }
-/* TODO */
-/* p.snippet {
-    text-align: center;
-} */
 
 .two {
     background-image: url('../img/VN2016_12.jpg');
@@ -183,7 +166,6 @@ li {
 }
 
 .footer {
-    /* border: 2px solid yellow; */
     background-color: grey;
     grid-area: ft;
     flex-direction: row;
@@ -200,11 +182,9 @@ li {
 }
 
 .LeftFt {
-    /* border: 2px solid brown; */
 }
 .RightFt{
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    /* border: 2px solid brown; */
+    align-items: center;
 }
