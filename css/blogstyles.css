@@ -1,6 +1,6 @@
 .blogContainer {
     display: grid;
-    grid-template-rows: 75px 75px 800px 1600px 50px;
+    grid-template-rows: 75px 75px 830px 1625px 50px;
     grid-template-columns: 600px;
     border: 2px solid black;
     justify-content: center;
@@ -27,7 +27,7 @@
 }
 
 .blogContent {
-    /* TODO: empty CSS */
+    display: inline-block;
 }
 
 .blogFooter {
@@ -43,6 +43,23 @@
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 figcaption {
     text-align: center;
 }
+
+/* @media(max-width: 600px) {
+
+}
+
+@media(min-width: 601px) and (max-width: 900px) {
+
+}
+
+@media(min-width: 901px) {
+    
+} */

@@ -1,11 +1,10 @@
+@import "blogstyles.css";
+@import "subscribestyles.css";
+@import "typographystyles.css";
+
 html {
     font-family: Raleway;
     color: #fafafa;
-}
-
-/* Don't change font color when link has been visited (hard to see the new color on a dark background). */
-a, a:visited, a:hover, a:active {
-    color: inherit;
 }
 
 .avatar {
@@ -19,18 +18,6 @@ a, a:visited, a:hover, a:active {
     position: relative;
     top: -50px;
     border: 7px solid #3a3f44;
-}
-
-h1 {
-    text-shadow: 5px 5px black;
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
 }
 
 body {
@@ -64,10 +51,6 @@ li {
     margin: 0px auto 0px auto;
 }
 
-/* @media(max-width: 320px) */
-/* @media(min-width: 600px) and (max-width: 900px) */
-/* @media(min-width: 901px) */
-
 @media(max-width: 600px){
 
     .container {
@@ -92,7 +75,7 @@ li {
 @media(min-width: 601px) and (max-width: 900px) {
     .container {
         display: grid;
-        grid-template-rows: 200px 275px 800px 130px;
+        grid-template-rows: 150px 275px 800px 130px;
         grid-template-columns: 400px 400px;
         grid-template-areas: 
         "hd hd"
@@ -122,7 +105,7 @@ li {
 
     .container {
         display: grid;
-        grid-template-rows: 200px 275px 800px 130px;
+        grid-template-rows: 150px 275px 800px 130px;
         grid-template-columns: 600px;
         grid-template-areas: 
         "hd"
@@ -181,10 +164,13 @@ li {
     justify-items: auto;
 }
 
+.card:hover{
+    border: 2px solid orange;
+ }
+
 .photoBox {
     display: block;
     position: relative;
-    /* TODO: Figure out -20 pix diff between photobox and card */
     top: 0px;
     left: 0px;    
     width: 275px;

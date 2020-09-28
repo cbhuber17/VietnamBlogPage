@@ -1,0 +1,35 @@
+/* Don't change font color when link has been visited (hard to see the new color on a dark background). */
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+h1 {
+    text-shadow: 5px 5px black;
+    font-weight: normal;
+    margin: 0
+}
+
+h2 {
+    text-align: center;
+    font-weight: normal;
+    margin: 0
+}
+
+h3 {
+    text-align: center;
+    font-weight: bolder;
+    margin: 0
+}
+
+p {
+    margin: 10px;
+    color: beige;
+    font-family: 'Palanquin Dark';
+
+}
+
+q {
+    font-family: Verdana;
+    color: lightskyblue;
+    font-style: italic;
+}
