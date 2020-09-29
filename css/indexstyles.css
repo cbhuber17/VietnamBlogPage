@@ -12,7 +12,7 @@ html {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-  }
+}
 
 .rel {
     position: relative;
@@ -36,7 +36,6 @@ ul.breadcrumb {
     border-radius: 5px;
 }
 
-/* Todo: use this as multiple classes where grey is background color */
 .greyBackground {
     background-color: grey;
 }
@@ -51,7 +50,7 @@ li {
     margin: 0px auto 0px auto;
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
 
     .container {
         display: grid;
@@ -70,7 +69,6 @@ li {
         justify-content: center;
     }
 }
-
 
 @media(min-width: 601px) and (max-width: 900px) {
     .container {
@@ -138,7 +136,6 @@ li {
 
 .header {
     display: inline-block;
-    background-color: grey;
     text-align: center;
     grid-area: hd;
 }
@@ -166,7 +163,7 @@ li {
 
 .card:hover{
     border: 2px solid orange;
- }
+}
 
 .photoBox {
     display: block;
@@ -176,12 +173,6 @@ li {
     width: 275px;
     height: 200px;
     border-radius: 10px;
-}
-
-.one {
-    background-image: url('../img/VN2014_12.jpg');
-    background-size: cover;
-    text-align: center; 
 }
 
 .snippet {
@@ -194,30 +185,47 @@ li {
     background-color: #202020;
 }
 
-.two {
+button {
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+button:hover {
+    color:white;
+}
+
+#one {
+    background-image: url('../img/VN2014_12.jpg');
+    background-size: cover;
+    text-align: center; 
+}
+
+#two {
     background-image: url('../img/VN2016_12.jpg');
     background-size: cover;
     text-align: center;
 }
 
-.three {
+#three {
     background-image: url('../img/VN2017_12.jpg');
     background-size: cover;
     text-align: center;
 }
 
-.four {
+#four {
     background-image: url('../img/VN2019_12.jpg');
     background-size: cover;
     text-align: center;
 }
 
 .footer {
-    background-color: grey;
     grid-area: ft;
     flex-direction: row;
     justify-content: space-evenly;
-
     font-family: 'Palanquin Dark';
 }
 

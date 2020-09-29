@@ -14,7 +14,6 @@
     font-family: 'Palanquin Dark';
     font-size: 32px;
     color: #fafafa;
-    background-color: grey;
 }
 
 .blogTitle {
@@ -36,7 +35,6 @@
     justify-content: space-evenly;
     font-family: 'Palanquin Dark';
     font-size: 20px;
-    background-color: grey;
 }
 
 .img-container {
@@ -51,15 +49,3 @@ img {
 figcaption {
     text-align: center;
 }
-
-/* @media(max-width: 600px) {
-
-}
-
-@media(min-width: 601px) and (max-width: 900px) {
-
-}
-
-@media(min-width: 901px) {
-    
-} */

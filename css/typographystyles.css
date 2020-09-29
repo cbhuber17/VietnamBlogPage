@@ -1,6 +1,11 @@
 /* Don't change font color when link has been visited (hard to see the new color on a dark background). */
-a, a:visited, a:hover, a:active {
+a, a:visited, a:active {
     color: inherit;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
 }
 
 h1 {
