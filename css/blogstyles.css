@@ -49,3 +49,25 @@ img {
 figcaption {
     text-align: center;
 }
+
+@media(max-width: 600px) {
+
+    .blogContainer {
+        display: grid;
+        grid-template-rows: 75px 75px 830px 1350px 50px;
+        grid-template-columns: 300px;
+        border: 2px solid black;
+        justify-content: center;
+    }
+
+    .blogHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+        font-family: 'Palanquin Dark';
+        font-size: 26px;
+        color: #fafafa;
+    }
+    
+}

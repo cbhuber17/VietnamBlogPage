@@ -54,7 +54,7 @@ li {
 
     .container {
         display: grid;
-        grid-template-rows: 200px 275px repeat(4, 325px) repeat(2, 130px);
+        grid-template-rows: 200px 275px repeat(4, 375px) repeat(2, 110px);
         grid-template-columns: 300px;
         grid-template-areas: 
         "hd"
@@ -67,6 +67,13 @@ li {
         "ft";
         border: 2px solid black;
         justify-content: center;
+    }
+
+    .nestedContent {
+        display: grid;
+        grid-template-rows: repeat(4, 375px);
+        grid-template-columns: 600px;
+        justify-items: center;
     }
 }
 
